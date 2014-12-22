@@ -22,13 +22,6 @@ TARGET_BOARD_PLATFORM_GPU := qcom-adreno200
 # Architecture
 TARGET_CPU_VARIANT := krait
 
-# Kernel
-BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom user_debug=31 zcache
-BOARD_KERNEL_BASE := 0x80200000
-BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01500000
-BOARD_KERNEL_PAGESIZE := 2048
-TARGET_KERNEL_SOURCE := kernel/samsung/d2
-
 # Audio
 BOARD_USES_ALSA_AUDIO := true
 BOARD_USES_LEGACY_ALSA_AUDIO := true
@@ -67,9 +60,6 @@ EXTENDED_FONT_FOOTPRINT := true
 
 # Includes
 TARGET_SPECIFIC_HEADER_PATH += device/samsung/msm8960-common/include
-
-# Lights
-TARGET_PROVIDES_LIBLIGHT := true
 
 # Logging
 TARGET_USES_LOGD := false
